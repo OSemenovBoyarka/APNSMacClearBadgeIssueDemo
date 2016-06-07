@@ -19,8 +19,11 @@ However if you send push with `"badge":2` - icon badge will change.
 8. Send push notification with following payload `{"aps":{"alert":"Another new message","badge":1,"sound":"default"}}`
 
 **Expeted result:** dock icon badge should be set to **"1"**
+
 **Actual result:** dock icon badge is not changed
 
 9. To ensure badge sets up, while app is closed - send another push notification with payload `{"aps":{"alert":"Two new messages","badge":2,"sound":"default"}}`
+
 **Expeted result:** dock icon badge should be set to **"2"**
+
 **Actual result:** dock icon badge is set to **"2"** (all works fine)
