@@ -145,6 +145,8 @@ static void soundCompleted(SystemSoundID soundFileObject, void *clientData)
     }
 
     [alert release];
+    //clear badge value
+    [self badgeApplicationIcon: @{}];
 }
 
 
